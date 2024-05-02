@@ -1,5 +1,6 @@
 import AboutCover from '@/src/components/About/AboutCover'
 import Skills from '@/src/components/About/Skills'
+
 import Link from 'next/link'
 
 

@@ -1,6 +1,7 @@
 import { allBlogs } from '@/.contentlayer/generated'
 import BlogLayoutThree from '@/src/components/Blog/BlogLayoutThree'
 import Categories from '@/src/components/Blog/Categories'
+import MobileSidebar from '@/src/components/Elements/MobileSidebar'
 import GithubSlugger, { slug } from 'github-slugger'
 
 
@@ -38,12 +39,6 @@ export async function generateMetadata({ params }) {
 }
 
 
-
-
-
-
-
-
 const CategoryPage = ({ params }) => {
   const allCategories = ["all"]
   const blog = allBlogs.filter((blog) => {
@@ -60,6 +55,7 @@ const CategoryPage = ({ params }) => {
   })
   return (
     <article className='mt-12 flex flex-col dark:text-light text-dark'>
+      <MobileSidebar />
       <div className='sxl:px-32 md:px-24 px-5 sm:px-10 flex flex-col'>
         <h1 className='mt-6 md:text-4xl text-2xl lg:text-5xl'>
           #{params.slug}

@@ -48,9 +48,9 @@ const Header = () => {
 
       >
         <Link href='/' className=' mx-2 sm:mx-2'>Home</Link>
-        <Link href='/about' className=' mx-1 sm:mx-2'>About</Link>
+        <Link href='/about' className=' mr-2 sm:mx-2'>About</Link>
         <Link href='/contact' className='mr-2 sm:mx-2'>Contact</Link>
-        <button onClick={() => setMode(mode === "light" ? "dark" : "light")} className={cx('w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1', mode === "light" ? "bg-dark text-light" : "bg-light text-dark")} >
+        <button onClick={() => setMode(mode === "light" ? "dark" : "light")} className={cx('w-6 h-6 ease mx-2 flex items-center justify-center rounded-full p-1', mode === "light" ? "bg-dark text-light" : "bg-light text-dark")} >
           {
             mode === "light" ? <MoonIcon className={"fill-dark"} /> : <SunIcon className={"fill-dark"} />
           }

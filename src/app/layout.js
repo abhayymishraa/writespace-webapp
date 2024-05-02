@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import siteMetadata from '../utils/siteMetadata'
 import ThemeScript from '../components/ThemeScript'
 
+
 const inter = Inter({ subsets: ['latin'], display: "swap", variable: "--font-in" })
 const manrope = Manrope({ subsets: ['latin'], display: "swap", variable: "--font-mr" })
 
